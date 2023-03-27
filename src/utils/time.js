@@ -1,1 +1,9 @@
-// console.log(new Date('2023-01-05,09:09:20+00').toLocaleString({timeZone: "Asia/Tashkent"}), new Date().toLocaleString({timeZone: "Asia/Tashkent"}));
+let currentYearDate = new Date();
+let startYearDate = new Date();
+
+currentYearDate.setMonth(currentYearDate.getMonth() - 1);
+currentYearDate.setDate(currentYearDate.getDate() - 11);
+startYearDate.setFullYear(startYearDate.getFullYear() - 1);
+startYearDate.setMonth(startYearDate.getMonth() - 1);
+startYearDate.setDate(startYearDate.getDate() - 11);
+console.log(startYearDate, currentYearDate);
